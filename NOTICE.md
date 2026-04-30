@@ -28,12 +28,12 @@ Modifications copyright (c) 2026, chialin.
 
 ## Image Assets
 
-All demo images in this repository are sourced from:
+All visual assets shipping in this repository are either:
 
-- [Pexels](https://www.pexels.com/) (Pexels License — free for commercial use)
-- [Unsplash](https://unsplash.com/) (Unsplash License — free for commercial use)
+- **Self-designed via Canva** by the fork author (logo, dark logo, favicon, demo author avatar)
+- **Inherited from the chialin-blog-astro source repository** (default category covers — chialin retains copyright; redistributed under the fork's MIT license)
 
-See [docs/image-sources.md](./docs/image-sources.md) for individual image attributions.
+See [docs/image-sources.md](./docs/image-sources.md) for individual file attributions.
 
 No images from the original Bookworm Light Astro repository are used. The upstream README explicitly states that demo images "are only for demonstration purposes" and are not licensed for redistribution; this fork has therefore replaced all demo imagery.
 

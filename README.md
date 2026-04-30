@@ -40,6 +40,7 @@ Open `http://localhost:4321` in your browser.
 
 - **Site config:** Edit `src/config/site.ts` (URL, name, social links, navigation)
 - **Categories:** The schema in `src/content.config.ts` defines `blog` and `lifestyle`. Add more in the enum + add corresponding cover images in `public/images/defaults/`
+- **Default cover fallback:** Toggle `settings.default_cover_enabled` in `src/config/config.json` (default: `true`). When disabled, posts without an explicit `image:` frontmatter render without a hero image instead of falling back to a category-based default cover.
 - **Dark mode logo:** Replace `public/images/dark-logo.png` and `public/images/logo.png`
 - **CJK fonts:** Uncomment the block at the bottom of `src/styles/main.css` (see comments inline)
 
