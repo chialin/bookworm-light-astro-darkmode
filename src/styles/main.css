@@ -1,3 +1,20 @@
+/* ==========================================================================
+   FONTS — configured via src/config/theme.json (NOT inline @import here).
+   See astro.config.mjs `parseFontString` for the format.
+
+   Default: Inter (Latin sans-serif) + Lora (serif).
+
+   To switch to CJK fonts, edit src/config/theme.json `fonts.font_family`:
+
+     "primary":   "Noto+Sans+TC:wght@400;600;700",
+     "secondary": "Noto+Serif+TC:wght@400;600;700"
+
+   For Japanese, use Noto+Sans+JP / Noto+Serif+JP. For Korean, Noto+Sans+KR.
+   You can mix Latin + CJK by setting primary to a stack like
+   "Inter:wght@400;500;600;700" with the CJK fallback configured at the
+   tailwind-plugin layer if needed.
+   ========================================================================== */
+
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @plugin "../tailwind-plugin/tw-theme.mjs";
