@@ -1,21 +1,18 @@
 ---
 import config from "@/config/config.json";
-import {
-  IoLogoFacebook,
-  IoLogoLinkedin,
-  IoLogoPinterest,
-  IoLogoTwitter,
-} from "react-icons/io5";
+import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io5";
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 const { base_url } = config.site;
 const { title, description, slug, className } = Astro.props;
+const shareUrl = `${base_url}/${slug}`;
 ---
 
 <ul class={`${className}`}>
   <li class="inline-block">
     <a
-      aria-label="facebook share button"
-      href={`https://facebook.com/sharer/sharer.php?u=${base_url}/${slug}`}
+      aria-label="Share on Facebook"
+      href={`https://facebook.com/sharer/sharer.php?u=${shareUrl}`}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -24,18 +21,18 @@ const { title, description, slug, className } = Astro.props;
   </li>
   <li class="inline-block">
     <a
-      aria-label="twitter share button"
-      href={`https://twitter.com/intent/tweet/?text=${title}&amp;url=${base_url}/${slug}`}
+      aria-label="Share on X"
+      href={`https://x.com/intent/post?text=${title}&url=${shareUrl}`}
       target="_blank"
       rel="noreferrer noopener"
     >
-      <IoLogoTwitter />
+      <FaXTwitter />
     </a>
   </li>
   <li class="inline-block">
     <a
-      aria-label="linkedin share button"
-      href={`https://www.linkedin.com/shareArticle?mini=true&url=${base_url}/${slug}&title=${title}&summary=${description}&source=${base_url}`}
+      aria-label="Share on LinkedIn"
+      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${title}&summary=${description}&source=${base_url}`}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -44,12 +41,12 @@ const { title, description, slug, className } = Astro.props;
   </li>
   <li class="inline-block">
     <a
-      aria-label="pinterest share button"
-      href={`https://pinterest.com/pin/create/button/?url=${base_url}/${slug}&media=&description=${description}`}
+      aria-label="Open Instagram"
+      href="https://www.instagram.com/"
       target="_blank"
       rel="noreferrer noopener"
     >
-      <IoLogoPinterest />
+      <FaInstagram />
     </a>
   </li>
 </ul>
