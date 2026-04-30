@@ -8,7 +8,7 @@ All assets shipping in this repository are tracked here for transparency.
 |------|--------|-------------|
 | `public/images/logo.png` | Self-designed via Canva | © 2026 chialin (this fork) |
 | `public/images/dark-logo.png` | Self-designed via Canva | © 2026 chialin (this fork) |
-| `public/images/favicon.png` | Self-designed via Canva | © 2026 chialin (this fork) |
+| `public/images/favicon.png` | AI-generated via Claude | © 2026 chialin (this fork) |
 
 ## Authors
 
@@ -37,3 +37,4 @@ category covers.
 ## Licenses Referenced
 
 - Canva Pro license terms (for self-designed assets) — https://www.canva.com/policies/content-license-agreement/
+- Anthropic Claude usage terms (for AI-generated assets) — https://www.anthropic.com/legal/consumer-terms

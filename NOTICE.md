@@ -30,7 +30,8 @@ Modifications copyright (c) 2026, chialin.
 
 All visual assets shipping in this repository are either:
 
-- **Self-designed via Canva** by the fork author (logo, dark logo, favicon, demo author avatar)
+- **Self-designed via Canva** by the fork author (logo, dark logo, demo author avatar)
+- **AI-generated via Claude** (favicon)
 - **Inherited from the chialin-blog-astro source repository** (default category covers — chialin retains copyright; redistributed under the fork's MIT license)
 
 See [docs/image-sources.md](./docs/image-sources.md) for individual file attributions.
