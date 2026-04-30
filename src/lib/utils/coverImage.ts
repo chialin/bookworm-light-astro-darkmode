@@ -1,3 +1,5 @@
+import config from "@/config/config.json";
+
 const COVER_BY_CATEGORY: Record<string, string> = {
   blog: "/images/defaults/cover-blog.jpg",
   lifestyle: "/images/defaults/cover-lifestyle.jpg",
@@ -8,6 +10,7 @@ export const getCoverImage = (post: {
   data: { image?: string; categories?: string[] };
 }): string => {
   if (post.data.image) return post.data.image;
+  if (config.settings.default_cover_enabled === false) return "";
   const primary = post.data.categories?.[0];
   return (primary && COVER_BY_CATEGORY[primary]) || FALLBACK_COVER;
 };

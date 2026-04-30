@@ -12,7 +12,8 @@
   },
 
   "settings": {
-    "pagination": 5
+    "pagination": 5,
+    "default_cover_enabled": true
   },
 
   "metadata": {

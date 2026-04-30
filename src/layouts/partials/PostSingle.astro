@@ -78,17 +78,19 @@ const image = getCoverImage(post);
         </ul>
       </div>
 
-      <div class="col-12 mt-8 mb-2">
-        <div class="aspect-video overflow-hidden rounded-lg">
-          <Image
-            src={image}
-            height={500}
-            width={1000}
-            alt={title}
-            class="w-full h-full object-cover"
-          />
+      {image && (
+        <div class="col-12 mt-8 mb-2">
+          <div class="aspect-video overflow-hidden rounded-lg">
+            <Image
+              src={image}
+              height={500}
+              width={1000}
+              alt={title}
+              class="w-full h-full object-cover"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       <div class="md:col-10">
         <div class="content mb-16 text-left">
