@@ -1,8 +1,8 @@
 const COVER_BY_CATEGORY: Record<string, string> = {
-  thoughts: "/images/defaults/cover-thought.jpg",
-  life: "/images/defaults/cover-life.jpg",
+  blog: "/images/defaults/cover-blog.jpg",
+  lifestyle: "/images/defaults/cover-lifestyle.jpg",
 };
-const FALLBACK_COVER = "/images/defaults/cover-view.jpg";
+const FALLBACK_COVER = "/images/defaults/cover-default.jpg";
 
 export const getCoverImage = (post: {
   data: { image?: string; categories?: string[] };
